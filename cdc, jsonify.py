@@ -5,7 +5,7 @@ import requests
 app=Flask(__name__)
 CORS(app)
 
-@app.route('/cdc_data', method=['GET'])
+@app.route('/cdc_data', methods=['GET'])
 def get_cdc_data():
     cdc_api_url = 'https://data.cdc.gov/resource/2ew6-ywp6.json?$query=SELECT%20%60wwtp_jurisdiction%60%2C%20%60date_start%60%2C%20%60date_end%60%2C%20%60percentile%60'
     try:

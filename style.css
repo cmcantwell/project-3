@@ -1,0 +1,79 @@
+/* this file contains the elements that make the web page look the way we want it to style spacing colors fonts */
+/* there are two parts a selector that specifies which html element is the target of the rule */
+/* and a declaration block that specifies how properties of the selected target should be styles */
+/* Remove the default margin and padding from the body. */
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+  color: #292828;
+  font-family: "AR One Sans", sans-serif;
+}
+
+.material-icons-outlined {
+  vertical-align: middle;
+  line-height: 1px;
+}
+
+.text-primary {
+  color: 292828;
+}
+
+.text-blue {
+  color: #246dec;
+}
+
+.text-red {
+  color: #cc3c43
+}
+
+.text-green {
+  color: #367952
+}
+
+.text-orange {
+  color: #f5b74f;
+}
+
+.font-weight-bold {
+  font-weight: 600;
+}
+
+
+/* defines a grid format for the webpage with columns  */
+/* for h1 */
+.grid-container {
+  text-align: center;
+  font-size: 20px;
+}
+
+
+/* Set map, body, and html to 100% of the screen size. */
+
+/* ------------- header ----------------*/
+
+.header {
+  grid-area: header;
+  height: 70px;
+  background-color: royalblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ------------- sidebar ----------------*/
+
+/*-- #sidebar {
+  grid-area: sidebar;
+  height: 100%;
+  background-color: grey;
+} --*/
+
+
+/* ------------- main ----------------*/
+
+.main-container {
+  grid-area: main;
+  background-color: #FFFFFF;
+}

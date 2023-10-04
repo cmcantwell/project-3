@@ -42,7 +42,7 @@ def covid_bar():
     con = sqlite3.connect("covid.sqlite")
     cur = con.cursor()
     query = """
-	SELECT Location, sum(Administered_65Plus) FROM 'Vaccinations_cleaned' group by Location order by sum(Administered_65Plus)
+	SELECT Location, sum(Administered) FROM 'Vaccinations_cleaned' group by Location order by sum(Administered)
 	desc
 
 	"""

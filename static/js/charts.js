@@ -1,24 +1,40 @@
-import Chart from 'chart.js/auto'
+let bar_route_url = "http://127.0.0.1:3009/api/v1.0/covid_bar"
 
-const url = 'https://data.cdc.gov/resource/unsk-b7fc.json'
-d3.csv
+let cdc_url = "http://127.0.0.1:3009/cdc_data"
+
+//console.log(bar_route_url)
+d3.json(bar_route_url).then((data) => {
+
+//console.log(data)
+let states = []
+let numbers = []
+for (i = 0; i < data.length; i++) {
+  states.push(data[i][0])
+   numbers.push(data[i][01])
+} 
+//console.log(states)
+//console.log(numbers)
+
+var data = [
+  {
+    x: states,
+    y: numbers,
+    type: 'bar'
+  }
+];
+
+Plotly.newPlot('bar', data);
+
+})
+
+//console.log(bar_route_url)
+d3.json(cdc_url).then((data) => {
+
+console.log(data)
+
+// Chart code goes here
+
+})
 
 
-d3.json(url).then(function(data) {
-    console.log(data);
-});
 
-new Chart (
-    document.getElementById('vaccinations'),
-    {
-        type: 'bar',
-        data: {
-            labels: 
-            datasets: [
-                {
-                    label: ''
-                    data:
-                }
-            ]
-        }    }
-)

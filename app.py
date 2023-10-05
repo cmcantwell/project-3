@@ -50,6 +50,20 @@ def covid_bar():
     results = cur.execute(query).fetchall()
     return jsonify(results)
 
+@app.route("/api/v1.0/age_bar")
+def age_bar():
+
+    
+    con = sqlite3.connect("covid20.sqlite")
+    cur = con.cursor()
+    query = """
+	SELECT sum(Administered_5Plus), sum(Administered_12Plus), sum(Administered_18Plus), sum(Administered_65Plus) FROM 'covid20' 
+
+	"""
+
+    results = cur.execute(query).fetchall()
+    return jsonify(results)
+
 
 @app.route('/cdc_data')
 def get_cdc_data():

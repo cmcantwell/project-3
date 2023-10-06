@@ -11,3 +11,12 @@ https://covid.cdc.gov/covid-data-tracker/#wastewater-surveillance
 
 Data that showed vaccines administered in the US: 
 https://data.cdc.gov/Vaccinations/COVID-19-Vaccinations-in-the-United-States-Jurisdi/unsk-b7fc
+
+Files: 
+Static folder 
+    * Charts.js: code that creates multiple bar chars using the vaccinations data 
+
+app.py : code that creates routes to our webpages and calls upon the sqlite database
+covid19.ipynb: jupyter notebook that hosts sqlite database for the vaccinations data
+seward.ipynb: jupyter notebook that hosts sqlite database for the wastewater data 
+style.

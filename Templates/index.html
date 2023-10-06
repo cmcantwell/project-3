@@ -1,0 +1,252 @@
+<!Doctype html>
+<html>
+ <head>
+  <meta name="viewport" content="with=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?
+family=Poppins:wght@100;200;300;400;600;700&display=swap"
+rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ </head> 
+ <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src=""></a>
+        <div class="nav-links" id="navlinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">COVID Facts</a></li>
+            <li><a href="">COVID Vaccine Map</a></li>
+            <li><a href="">COVID Sewer Testing</a></li>
+          </ul>        
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+    <div class="text-box">
+      <h1>CDC Recommends Updated COVID-19 Vaccine for Fall/Winter Virus Season</h1>
+      <br>
+      <br>
+      <p>
+        CDC recommends everyone 6 months and older get an updated COVID-19 vaccine to protect against the potentially serious
+        outcomes of COVID-19 illness this fall and winter. Updated COVID-19 vaccines from Pfizer-BioNTech and Moderna are now available.
+        <br>
+        <br>
+        Vaccination remains the best protection against COVID-19-related hospitalization and death. Vaccination also reduces
+        your chance of suffering the effects of Long COVID, which can develop during or following acute infection and last for
+        an extended duration.  If you have not received a COVID-19 vaccine in the past 2 months, get an updated COVID-19 vaccine
+        to protect yourself this fall and winter.
+      </p>
+      <br>
+      <br>
+      <br>
+    <a href="https://covid.cdc.gov/covid-data-tracker/#datatracker-home" class="cdc-btn" target="_blank">Click this link to see the latest
+      COVID Information</a>
+    </div>
+    </section>
+
+    
+
+
+    <!--Javascript for toggle menu-->
+    <script>
+
+      Let navLinks = document.getElementById("navLinks"); 
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      } 
+      function hideMenu() {
+          navLinks.style.right = "-200";
+      }
+
+    </script>
+
+
+
+<!--Covid Facts section-->
+<section class="COVID_Facts">
+  <h1>COVID Facts</h1>
+  <br>
+  <p>The first official case of COVID-19 in the United States was on January 20, 2020 in the state of Washington. There
+    were earlier cases in October of 2019, that were diagnosed after the fact. These cases were not included in the
+    official count because the cases were not citizens of the USA. The Emergency Operations Center (EOC) was activated
+    on January 18, 2023. The first case in a foreign land will never be formally declared.
+    <br>
+    A national emergency declaration was made in March of 2020. The emergency use authorization was set to conclude on
+    May 11, 2023 but was extended because of continued high COVID case levels. The next conclusion date was set to take
+    place on October 1, 2023. The EUA is still in effect for many agencies.
+  </p>
+
+  <div class="row">
+    <div class="COVID-col">
+      <h2>Statistics</h2>
+      <p> September of 2023 saw an overall decline in positive tests, emergency department visits, and hospitalizations.
+        <br>
+        There were some increases in some areas mostly in the Western United States. Montana, Idaho, Nevada, and South
+        Dakota had the largest increases.
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>        
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+    <!--COVID Vaccine Map-->
+    
+
+      <section class="COVID_Vaccine_Map">
+        <h1>COVID Vaccine Map</h1>
+        <br>
+        <br>
+        <h2>Types of COVID-19 Vaccines Available</h2>
+        <br>
+        <br>
+        <p>Authorized or licensed by the U.S. Food and Drug Administration (FDA) currently include:
+          <br>
+          Pfizer-BioNTech and Moderna COVID-19 vaccines which are mRNA vaccines.
+          Novavax COVID-19 vaccine which is a protein subunit vaccine.
+          J&J/Janssen COVID-19 vaccine, a viral vector vaccine has expired and is no longer available for use in the United States
+          as of May 6,
+        </p>
+      </section>
+        <div class="vaccination_Numbers">
+          <h3>Total Vaccinations by State and Age on 05/10/2023</h3>
+          <p>All data was obtained from CDC.gov</p>
+          <br>
+          <br>
+          <div class="Vaccination">
+            <img src=""
+                        
+          </div>
+      <section>
+
+      </section>
+
+      <!--make 3 sections -->
+      <section class="sections">
+        <div class="row">
+          <div class="vac2020-col">
+            <h3>Total Vaccinated in October 2020</h3> 
+            <br>
+            <div class="vaxmap">
+              <img src="images/hospitalizations_in_2020.jpg"               
+            </div>
+            <br>
+            <p>investors.com</p>
+          </div>
+                   
+          <div class="vac12023-col">
+            <h3>Total Vaccinated in May 2023 With at Least One Dose</h3>
+            <br>
+            <div class="vax1map">
+              <img src="images/2023vacrate1.png"
+              <br>
+              <p>Wikipedia.org</p>
+            </div>
+          </div>  
+          
+          <div class="vacf2023-col">
+            <h3>Total Fully Vaccinated in May 2023</h3>
+            <br>
+            <div class="vaxfmap">
+              <img src="images/2023fullvac.png" 
+              <br>
+              <p>wikipedia.org</p>
+            </div>
+          </div>    
+
+          
+                    
+        </div>
+        
+      </section>
+
+
+
+
+
+
+
+<!--JavaScript for toggle menu-->
+    <script>
+
+      let navLinks = document.getElementById("navLinks");
+      function showMenu() {
+          navLinks.style.right = "0";
+        }
+      function hideMenu() {
+          navLinks.style.right = "-200px";
+        }
+
+    </script> 
+
+
+<!--COVID Sewer Testing-->
+<section class="COVID_Sewer_Testing">
+  <h1>COVID Sewer Testing</h1>
+  <br>
+  <br>
+  <h2>National Wastewater Surveillance System (NWSS)</h2>
+  <br>
+  <br>
+  <br>
+  <p>In response to the COVID-19 pandemic, CDC launched the National Wastewater Surveillance System (NWSS) in September 2020.
+  CDC developed NWSS to coordinate and build the nation’s capacity to track the presence of SARS-CoV-2, the virus that
+  causes COVID-19, in wastewater samples collected across the country.
+  <br>
+  <br>
+  People infected with SARS-CoV-2 can shed the virus in their feces, even if they don’t have symptoms. The virus can then
+  be detected in wastewater, enabling wastewater surveillance to capture presence of SARS-CoV-2 shed by people with and
+  without symptoms.
+  </p>
+
+  
+    <div class="waste">
+      <h4>Wastewater surveillance can provide an early warning of COVID-19’s spread in communities.</h4>
+      <p> September of 2023 saw an overall decline in positive tests, emergency department visits, and hospitalizations.
+        <br>
+        There were some increases in some areas mostly in the Western United States. Montana, Idaho, Nevada, and South
+        Dakota had the largest increases.
+        <br>
+        <br>
+      </p>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <div class="waterpdf">
+      <img src="images/covid_wws_infographic.pdf"
+      
+    </div>
+  
+</section>
+
+
+</body>
+
+
+
+</html>
+
+
+
+

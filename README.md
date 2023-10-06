@@ -19,4 +19,4 @@ Static folder
 app.py : code that creates routes to our webpages and calls upon the sqlite database
 covid19.ipynb: jupyter notebook that hosts sqlite database for the vaccinations data
 seward.ipynb: jupyter notebook that hosts sqlite database for the wastewater data 
-style.
+

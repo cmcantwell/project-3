@@ -21,19 +21,10 @@ import sqlite3
 #################################################
 app = Flask(__name__)
 
-@app.route("/")
+@app.route("/home")
 def index():
     return render_template('index.html')
 
-
-@app.route("/api/v1.0/complete")
-def complete():
-
-    
-    con = sqlite3.connect("covid20.sqlite")
-    cur = con.cursor()
-    results = cur.execute("SELECT * FROM 'covid20'").fetchall()
-    return jsonify(results)
 
 @app.route("/api/v1.0/covid_bar")
 def covid_bar():
@@ -45,10 +36,11 @@ def covid_bar():
 	SELECT Location, sum(Administered) FROM 'covid20' group by Location order by Location
 	desc
 
-	"""
+	"""         
 
     results = cur.execute(query).fetchall()
     return jsonify(results)
+    #return render_template('barChart.html')
 
 @app.route("/api/v1.0/age_bar")
 def age_bar():
@@ -74,7 +66,7 @@ def age_bar():
     
 @app.route('/cdc_data')
 def get_cdc_data():
-     con = sqlite3.connect("seward.sqlite")
+    con = sqlite3.connect("seward.sqlite")
     cur = con.cursor()
     query = """
 	SELECT wwtp_jurisdiction, date_start, date_end, percentile FROM 'NWSS_Public_SARS-CoV-2_Wastewater_Metric_Data' 
@@ -84,4 +76,4 @@ def get_cdc_data():
     
 
 if __name__ == '__main__':
-    app.run(port = 3009, debug=True)
+    app.run(port=3009, debug=True)

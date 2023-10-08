@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar Chart</title>
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    </head>
+   
+<body>
+    <section class="header">
+        <nav>
+          <a href="index.html"><img src=""></a>
+          <div class="nav-links" id="navlinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+              <li><a href="/home">Home</a></li>
+              <li><a href="">COVID Facts</a></li>
+              <li><a href="/api/v1.0/covid_bar">Covid Bar Chart</a></li>
+              <li><a href="">COVID Vaccine Map</a></li>
+              <li><a href="">COVID Sewer Testing</a></li>
+            </ul>        
+          </div>
+          <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+  
+    <div class="container">
+        <h1>Total Vaccinations Administered By State</h1>
+        <canvas id="barChart"></canvas>
+    </div>
+    <!-- Include Chart.js library -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.min.js"></script>
+
+        
+    </div>
+    
+</body>
+</html>

@@ -22,9 +22,13 @@ import sqlite3
 app = Flask(__name__)
 
 @app.route("/home")
-def index():
+def home():
     return render_template('index.html')
 
+
+@app.route("/api/v1.0/Covid_Facts")
+def covidFacts():
+    return render_template('facts.html')
 
 @app.route("/api/v1.0/covid_bar")
 def covid_bar():
@@ -39,8 +43,7 @@ def covid_bar():
 	"""         
 
     results = cur.execute(query).fetchall()
-    return jsonify(results)
-    #return render_template('barChart.html')
+    return render_template('barChart.html')
 
 @app.route("/api/v1.0/age_bar")
 def age_bar():
@@ -76,4 +79,4 @@ def get_cdc_data():
     
 
 if __name__ == '__main__':
-    app.run(port=3009, debug=True)
+    app.run(debug=True)

@@ -1,4 +1,4 @@
-let bar_route_url = "http://127.0.0.1:3009/api/v1.0/covid_bar"
+let bar_route_url = "http://127.0.0.1:5000/api/v1.0/covid_bar"
 
 //console.log(bar_route_url)
 d3.json(bar_route_url).then((data) => {
@@ -24,6 +24,6 @@ let layout = {
         title: "Total Vaccines Administered by State, 2021-2023",
         legend: False
 }
-Plotly.newPlot('bar', data, layout);
+Plotly.newPlot('barChart', data, layout);
 
 })
